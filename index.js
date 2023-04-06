@@ -19,13 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+
 const votingAge = 18
 if(votingAge >= 18){
   console.log('task 1 a:', true);
 }else{
   console.log('task 1 a:', false);
 }
-
 
 /*
 Task 1b - Values (not auto tested)
@@ -38,6 +38,7 @@ Do the following:
 
    HINT: no function required
 */
+
 let thingOne = "Glow"
 let thingTwo = "Key";
 if(thingTwo === "Glow"){
@@ -45,9 +46,6 @@ if(thingTwo === "Glow"){
 } else {
   console.log('task 1 b:', thingTwo)
 }
-
-
-
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -59,10 +57,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+
 const year = '1999';
 console.log('task 1 c:', Number(year));
-
-
 
 /*
 Task 1d - Multiply
@@ -78,7 +75,6 @@ function multiply(num1, num2){
 }
 console.log('task 1 d:', multiply(2,3));
 
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
@@ -93,7 +89,6 @@ function dogYears(age1){
   return age1 * 7;
 }
 console.log('task 2:', dogYears(32));
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -182,6 +177,7 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+
 let computer = Math.random()
 if(computer <= .334){
   computer = 'rock';
@@ -204,7 +200,6 @@ function game(user, computer){
   }
 }
 console.log('task 4:', game('rock', computer))
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -235,8 +230,6 @@ function feet(cm){
   return cm / 30.48
 }
 console.log('task 5b:', feet(200), 'feet');
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -276,7 +269,7 @@ Using the grade function below do the following:
 
 function grade(number){
   if(number >= 90){
-    return 'you got a n A'
+    return 'you got an A'
   }else if(number < 90 && number >= 80){
     return 'you got a B';
   }else if(number < 80 && number >= 70){
@@ -284,7 +277,7 @@ function grade(number){
   }else if(number < 70 && number >= 60){
     return 'you got a D';
   }else if(number < 60 && number >= 0){
-    return 'you got a F';
+    return 'you got an F';
   }
 }
 console.log('task 7', grade(79));
