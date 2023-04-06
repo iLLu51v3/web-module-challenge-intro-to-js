@@ -296,11 +296,17 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(exampleWord){
+  const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+  let count = 0;
+  for(let i = 0; i < exampleWord.length; i++) {
+    if(vowels.includes(exampleWord[i])) {
+      count++;
+    }
+  }
+  return count;
 }
-
-
+console.log(vowelCounter('ExAmp13 WorD f0r tEsTing'))
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
